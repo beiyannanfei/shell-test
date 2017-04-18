@@ -1,2 +1,2 @@
 .idea
-SHELL/03-删除过期文件/*.log
+SHELL/*/*.log
