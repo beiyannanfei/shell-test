@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 sh ../02-批量新建文件/my.sh       #首先指向文件新建脚本
+sleep 10s   #延时10秒
 #删除n天前的*.log文件
 n=$((10*86400))     #保留10天
 today=$(date +%Y%m%d)
@@ -12,7 +13,8 @@ do
     fileDateStamp=`date -j -f "%Y%m%d" "$fileDate" +%s`
     secDiff=`expr ${todayStamp} - ${fileDateStamp}`
 #    echo "${fileDate} timeStamp is ${fileDateStamp} diff of ${today} is ${secDiff}"
-    if [ ${secDiff} -gt ${n} ]; then
-        echo "============== ${file}"
+    if [ ${secDiff} -ge ${n} ]; then
+        rm -rf $file
+        echo "delete ${file} finish."
     fi
 done
