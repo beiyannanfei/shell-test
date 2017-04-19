@@ -4,7 +4,7 @@ cd ../03-删除过期文件 && pwd && ls && rm -rf *.log
 today=`date +%Y%m%d`    #<=> today1=$(date +%Y%m%d)
 echo "today is ${today}"
 #date -v -1d +%Y-%m-%d(mac系统获取当前时间的前一天) linux为: date +%Y%m%d --date='-1 day'
-before30day=`date +%Y%m%d --date='-30 day'`  #30天前的日期
+before30day=`date -d "-30 day" +%Y%m%d`  #30天前的日期
 echo "a month ago is ${before30day}"
 
 counter=1
@@ -17,7 +17,7 @@ do
         touch $filename
         echo "touch ${filename} success"
     fi
-    currentDay=date +%Y%m%d --date=`-${counter} day`
+    currentDay=`date -d "-${counter} day" +%Y%m%d`
     counter=`expr ${counter} + 1`
 done
 
