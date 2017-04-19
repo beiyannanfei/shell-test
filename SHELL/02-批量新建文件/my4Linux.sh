@@ -17,7 +17,7 @@ do
         touch $filename
         echo "touch ${filename} success"
     fi
-    currentDay=`date +%Y%m%d --date='-${counter} day'`
+    currentDay=`date +%Y%m%d --date=-${counter} day`
     counter=`expr ${counter} + 1`
 done
 
