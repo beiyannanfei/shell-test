@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 sh ../02-批量新建文件/my4linux.sh       #首先指向文件新建脚本
+echo '*************** create logs file finish sleep 10 second ***************'
 sleep 10s   #延时10秒
 #删除n天前的*.log文件
 n=$((10*86400))     #保留10天
