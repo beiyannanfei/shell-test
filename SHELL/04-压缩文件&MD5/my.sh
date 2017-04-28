@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-rm -rf *.gz *.log
+rm -rf *.gz *.log && ls
+echo "=========================================="
 counter=0
 while [ ${counter} -lt 10 ]
 do
@@ -22,7 +23,8 @@ echo "${baseFileName} MD5 value is ${md5Str}"
 newFileName="${baseFileName}.${md5Str}.tar.gz"
 echo "newFileName is ${newFileName}"
 cp ${tarFileName} ${newFileName}
-
+echo "=========================================="
+rm *.log && ls
 
 
 
