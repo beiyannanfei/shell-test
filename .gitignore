@@ -1,3 +1,5 @@
 .idea
 SHELL/*/*.log
 .DS_Store
+SHELL/04-压缩文件&MD5/*
+!SHELL/04-压缩文件&MD5/my.sh
