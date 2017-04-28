@@ -24,7 +24,7 @@ newFileName="${baseFileName}.${md5Str}.tar.gz"
 echo "newFileName is ${newFileName}"
 cp ${tarFileName} ${newFileName}
 echo "============================================"
-rm *.log && ls
+rm *.log && ls -lh
 
 
 
