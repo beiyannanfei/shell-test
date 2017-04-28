@@ -17,7 +17,7 @@ tar -zcvf ${tarFileName} *.log
 echo "tar ${tarFileName} finish"
 baseFileName=${tarFileName%%.*}
 echo "base file name ${baseFileName}"
-md5Str=MD5 ${baseFileName}
+md5Str=echo ${baseFileName} | md5sum | awk '{print $1}'
 echo "${baseFileName} MD5 value is ${md5Str}"
 newFileName="${baseFileName}.${md5Str}.tar.gz"
 echo "newFileName is ${newFileName}"
