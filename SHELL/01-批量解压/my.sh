@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/bash
 #循环解压
 for file in ./*.gz
 do

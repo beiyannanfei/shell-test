@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 sh ../02-批量新建文件/my4linux.sh       #首先指向文件新建脚本
 echo '*************** create logs file finish sleep 10 second ***************'
 sleep 10s   #延时10秒

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #在"03-删除过期文件"文件夹中新建最近30天的形如20170101-a.log的文件
 cd ../03-删除过期文件 && pwd && ls && rm -rf *.log
 today=`date +%Y%m%d`    #<=> today1=$(date +%Y%m%d)
