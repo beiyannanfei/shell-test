@@ -5,3 +5,4 @@ SHELL/04-压缩文件&MD5/*
 !SHELL/04-压缩文件&MD5/my4linux.sh
 SHELL/05-创建级联文件/*
 !SHELL/05-创建级联文件/my4mac.sh
+SHELL/*.txt
