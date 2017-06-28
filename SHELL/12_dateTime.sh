@@ -15,6 +15,7 @@ echo "time1 str is ${time1}";
 #时间差计算方法
 time1Str="2010-01-01";
 time2Str="2009-01-01 11:11:11";
-timeDiff=$(($(date +%s -d ${time1Str})-$(date +%s -d ${time2Str})));
+#timeDiff=$(($(date +%s -d ${time1Str})-$(date +%s -d ${time2Str})));
+timeDiff=$(($(date +%s -d '2010-01-01') - $(date +%s -d '2009-01-01 11:11:11')));
 echo "timeDiff is ${timeDiff}";
 
