@@ -12,4 +12,9 @@ time1=$(date +%Y-%m-%d\ %H:%M:%S -d "1970-01-01 UTC $time1 seconds");
 echo "time1 str is ${time1}";
 
 
+#时间差计算方法
+time1Str="2010-01-01";
+time2Str="2009-01-01 11:11:11";
+timeDiff=$(($(date +%s -d ${time1Str}) - $(date +%s -d ${time2Str})));
+echo "timeDiff is ${timeDiff}";
 
